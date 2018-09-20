@@ -1,0 +1,208 @@
+body {
+  background: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+}
+
+.languages li {
+  padding: 20px;
+}
+
+.languages li:hover {
+  cursor: pointer;
+}
+
+.selected {
+  color: red;
+  font-weight: bold;
+}
+
+/* repos grid */
+
+.popular-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.popular-item {
+  text-align: center;
+  margin: 20px;
+}
+
+.popular-item__avatar {
+  width: 150px;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: red;
+}
+
+.navbar li {
+  padding: 20px;
+}
+
+/* intro */
+
+.intro {
+  text-align: center;
+}
+
+.intro a {
+  color: white;
+  background: black;
+  text-decoration: none;
+  padding: 10px 80px;
+  border-radius: 5px;
+}
+
+/* player form */
+
+.player-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.player-form label {
+  text-align: center;
+  font-size: 200%;
+  margin-bottom: 10px;
+}
+
+.player-form input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  font-family: inherit;
+}
+
+.player-form input[type="submit"] {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  background: black;
+  border: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 120%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* player view */
+
+.player-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-view img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.player-view__name {
+  text-align: center;
+  font-size: 170%;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.player-view__reset {
+  cursor: pointer;
+  color: red;
+  text-align: center;
+  display: block;
+}
+
+/* battle btn */
+
+.battle-btn {
+  height: 40px;
+  border: none;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  font: inherit;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+/* player */
+.player {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.player__header {
+  text-align: center;
+}
+
+.player__label {
+  font-size: 250%;
+  font-weight: 100;
+}
+
+.player__score {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.player__login {
+  font-size: 180%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.player__avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.player_review {
+  text-align: center;
+}
+
+.player_details {
+  text-align: left;
+}
+
+/* battle result */
+.battle-result {
+  display: flex;
+  flex-wrap: wrap;
+}
