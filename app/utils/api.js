@@ -7,7 +7,7 @@ var params = `?client_id=${id}&client_secret=${sec}`;
 
 function getProfile(username) {
   return axios
-    .get("http://api.github.com/users/" + username + params)
+    .get("http://api.github.com/users/" + username)
     .then(function(res) {
       return res.data;
     });
@@ -15,9 +15,7 @@ function getProfile(username) {
 
 function getRepos(username) {
   return axios
-    .get(
-      "http://api.github.com/users/" + username + "/repos?per_page=100" + params
-    )
+    .get("http://api.github.com/users/" + username + "/repos?per_page=100")
     .then(function(res) {
       return res.data;
     });
